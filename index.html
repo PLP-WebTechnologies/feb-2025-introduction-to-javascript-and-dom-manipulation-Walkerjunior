@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript & DOM Manipulation</title>
+  <style>
+    .highlight {
+      color: crimson;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="main-title">Welcome to My Page</h1>
+  </header>
+
+  <nav>
+    <p>This is a sample nav section (not functional for now).</p>
+  </nav>
+
+  <main>
+    <section>
+      <p id="text-paragraph">This text will change when you click the button below.</p>
+      <button onclick="changeText()">Change Text</button>
+    </section>
+
+    <section>
+      <button onclick="toggleStyle()">Toggle Highlight</button>
+    </section>
+
+    <section>
+      <button onclick="addOrRemove()">Add/Remove Element</button>
+      <div id="container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My First DOM Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
